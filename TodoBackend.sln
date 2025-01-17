@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoBackend.Presentation", "TodoBackend.Presentation\TodoBackend.Presentation.csproj", "{4ACCC020-4D26-4A97-9A6E-D2EA49053039}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TodoBackend.Presentation", "TodoBackend.Presentation\TodoBackend.Presentation.csproj", "{4ACCC020-4D26-4A97-9A6E-D2EA49053039}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoBackend.Application", "TodoBackend.Application\TodoBackend.Application.csproj", "{602AB294-4807-4540-B22D-1F159511C575}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TodoBackend.Application", "TodoBackend.Application\TodoBackend.Application.csproj", "{602AB294-4807-4540-B22D-1F159511C575}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoBackend.Infrastructure", "TodoBackend.Infrastructure\TodoBackend.Infrastructure.csproj", "{734D9D09-442C-4D9F-820E-7AACE84EB99F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TodoBackend.Infrastructure", "TodoBackend.Infrastructure\TodoBackend.Infrastructure.csproj", "{734D9D09-442C-4D9F-820E-7AACE84EB99F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoBackend.Tests", "TodoBackend.Tests\TodoBackend.Tests.csproj", "{A7DC8ACA-900A-497F-955A-F3A095F5810B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoBackend.Domain", "TodoBackend.Domain\TodoBackend.Domain.csproj", "{C8C48D67-13F4-4E3F-BA27-E43D9C69426D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{A7DC8ACA-900A-497F-955A-F3A095F5810B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A7DC8ACA-900A-497F-955A-F3A095F5810B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A7DC8ACA-900A-497F-955A-F3A095F5810B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8C48D67-13F4-4E3F-BA27-E43D9C69426D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8C48D67-13F4-4E3F-BA27-E43D9C69426D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8C48D67-13F4-4E3F-BA27-E43D9C69426D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8C48D67-13F4-4E3F-BA27-E43D9C69426D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
