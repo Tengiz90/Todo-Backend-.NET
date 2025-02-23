@@ -7,12 +7,12 @@ using TodoBackend.Domain.Models;
 
 namespace TodoBackend.Application.Repositories
 {
-    public interface TodoReposiroty
+    public interface ITodoReposiroty
     {
-        int SaveTodo(string name);
-        bool DeleteTodo(int id);
-        bool ToggleCompleted(int id, bool completed);
-        List<Todo> GetAllTodos();
+        int SaveTodo(string title, int userId);
+        bool DeleteTodo(int id,int userId);
+        bool ToggleCompleted(int id, int userId);
+        List<Todo> GetTodosByUserId(int userId);
 
     }
 }

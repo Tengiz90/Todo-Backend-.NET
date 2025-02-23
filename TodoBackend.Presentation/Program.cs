@@ -2,6 +2,8 @@ using Microsoft.OpenApi.Models;
 using TodoBackend.Application.Services.Interfaces;
 using TodoBackend.Application.Services.Implementations;
 using TodoBackend.Application.Services.Models;
+using TodoBackend.Presentation.Filters;
+using TodoBackend.Application.Repositories;
 namespace TodoBackend.Presentation
 {
     public class Program
@@ -41,9 +43,18 @@ namespace TodoBackend.Presentation
                     }
                 });
             });
+
+            builder.Services.AddScoped<ITodoReposiroty, TodoReposiroty>();
             builder.Services.AddScoped<ITokenService, TokenService>();
             builder.Services.AddScoped<IUserService, UserService>();
+            builder.Services.AddScoped<ITodoService, TodoService>();
+            builder.Services.AddScoped<IErrorLoggingService, ErrorLoggingService>();
             builder.Services.Configure<AuthSettings>(builder.Configuration.GetSection("AuthSettings"));
+            builder.Services.AddScoped<GlobalExceptionFilter>();
+            builder.Services.AddControllers(config =>
+            {
+                config.Filters.AddService(typeof(GlobalExceptionFilter));
+            });
 
             var app = builder.Build();
 

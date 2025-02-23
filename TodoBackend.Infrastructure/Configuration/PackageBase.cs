@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace TodoBackend.Infrastructure.Configuration
 {
-    internal class PackageBase
+    public class PackageBase
     {
-        string? connStr;
+        protected string? connStr;
         IConfiguration configuration;
 
         public PackageBase(IConfiguration configuration)

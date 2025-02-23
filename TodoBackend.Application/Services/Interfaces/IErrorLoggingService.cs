@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace TodoBackend.Application.Services.Interfaces
 {
-    internal class IErrorLoggingService
+    public interface IErrorLoggingService
     {
+        public void SaveError(string title, int? userId);
     }
 }

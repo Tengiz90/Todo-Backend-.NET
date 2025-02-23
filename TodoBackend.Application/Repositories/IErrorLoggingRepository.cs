@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TodoBackend.Application.Repositories
 {
-    internal class IErrorLoggingRepository
+    public class IErrorLoggingRepository
     {
     }
 }

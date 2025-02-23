@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TodoBackend.Application.Services.Interfaces;
+using TodoBackend.Application.Repositories;
 
-namespace TodoBackend.Application.Services.Implementations
+namespace TodoBackend.Infrastructure.Repositories.Implementations
 {
-    public class UserService : IUserService
+    public class UsersRepository : IUsersRepository
     {
         public bool RefreshTokenAlreadyExists(string token)
         {
-            return false;
+            return true;
         }
     }
 }

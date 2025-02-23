@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TodoBackend.Application.Repositories
 {
-    internal interface IUsersRepository
+    public interface IUsersRepository
     {
         public bool RefreshTokenAlreadyExists(string token);
     }
